@@ -1,6 +1,4 @@
-// This file shows basic functions of reading in a CSV file using C++98
-// Please add your name to your code! 
-
+JingYi Zhang
 /* Homework Objective: fix this program to match the requirements listed: 
   1. successfully reads all lines of the input file
   2. calculate the average price per brand, average price per category 
