@@ -1,5 +1,3 @@
-84 lines (60 sloc)  2.11 KB
-   
 // This file shows basic functions of reading in a CSV file using C++98
 // Please add your name to your code! 
 
