@@ -30,33 +30,38 @@ int main() {
   ifstream in_stream;
   in_stream.open("data.csv"); //opening the file.
 
+  ofstream out_stream;
+  out_stream.open("output.txt"); //opening output file
+
   if (!in_stream.fail()) { //if the file is open
 
     string line;
+    getline(in_stream,line);
 
     while (getline(in_stream, line)) { //while the end of file is NOT reached
 
      // Fields: sku,brand,category,year,price
 
-     getline(in_stream, sku, ',');
+     stringstream lines(line);
+     getline(lines, sku, ',');
      stringstream ssku(sku); 
      int iSKU = 0;
      ssku >> iSKU;
      vSKU.push_back(iSKU);
 
-     getline(in_stream, brand, ',');
+     getline(lines, brand, ',');
      vBrand.push_back(brand);
 
-     getline(in_stream, category, ',');
+     getline(lines, category, ',');
      vCategory.push_back(category);
 
-     getline(in_stream, year, ','); 
+     getline(lines, year, ','); 
      stringstream syear(year);
      int iYear;
      syear >> iYear;
      vYear.push_back(iYear);
 
-     getline(in_stream, price, '\n'); 
+     getline(lines, price, '\n'); 
      stringstream sprice(price);
      float fPrice;
      sprice >> fPrice;
@@ -71,10 +76,12 @@ int main() {
    }
  
   //output values 
-  cout << "SKU" << "\t" << "Brand" << "\t" << "Year" << endl; 
+  out_stream  << "SKU" << "\t" << "Brand" << "\t" << "Category" << "\t" 
+<< "Year" << "\t" << "Price" << endl; 
 
   for (int j = 0; j < vSKU.size(); j++) {
-    cout << vSKU[j] << "\t" << vBrand[j] << "\t" << vYear[j] << endl;
+    out_stream << vSKU[j] << "\t" << vBrand[j] << "\t" 
+<< vCategory[j] << "\t" << "        " <<  vYear[j] << "\t" << vPrice[j]<< endl;
   }
 
   cout << endl;
