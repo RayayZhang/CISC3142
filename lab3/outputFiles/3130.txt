@@ -15,5 +15,5 @@ I18 56
 I19 10
 I27 6
 Course 3130- Spring Semester Pass Rate is -nan%
-Course 3130- Fall Semester Pass Rate is -nan%
+Course 3130- Fall Semester Pass Rate is -81.8182%
 Overall pass rate for 3130 is 82.8485%

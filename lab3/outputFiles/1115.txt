@@ -34,5 +34,5 @@ I25 6
 I26 7
 I28 170
 Course 1115- Spring Semester Pass Rate is 55.1839%
-Course 1115- Fall Semester Pass Rate is -nan%
+Course 1115- Fall Semester Pass Rate is -56.6947%
 Overall pass rate for 1115 is 56.893%

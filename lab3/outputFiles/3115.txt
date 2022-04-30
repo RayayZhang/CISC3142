@@ -29,5 +29,5 @@ I24 3
 I27 8
 I28 33
 Course 3115- Spring Semester Pass Rate is -nan%
-Course 3115- Fall Semester Pass Rate is -nan%
+Course 3115- Fall Semester Pass Rate is -74.4639%
 Overall pass rate for 3115 is 79.0625%
